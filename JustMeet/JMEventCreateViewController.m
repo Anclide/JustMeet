@@ -128,7 +128,10 @@
             }];
         }
         NSMutableArray *arr = [[NSMutableArray alloc] init];
-        arr = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"events"]];
+        if ([NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] dataForKey:@"events"]]) {
+            arr = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] dataForKey:@"events"]];
+        }
+        //arr = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] dataForKey:@"events"]];
         [arr addObject:event];
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:arr];
         [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"events"];

@@ -15,6 +15,8 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "JMUser.h"
 #import "JMDetailEventViewController.h"
+#import <AFMInfoBanner.h>
+
 static NSUInteger row;
 @interface JMListViewController () <UITableViewDelegate, UITableViewDataSource, GMSMapViewDelegate>
 {
@@ -27,6 +29,7 @@ static NSUInteger row;
 @property (weak, nonatomic) IBOutlet UITableView *table;
 
 @property (strong, nonatomic) JMMeeting *selectedEvent;
+@property (strong, nonatomic) NSArray *meets;
 
 @end
 
@@ -54,9 +57,16 @@ static NSUInteger row;
 }
 
 - (void)reloadData {
-    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"events"];
-    meetings = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-    [_table reloadData];
+    if ([[NSUserDefaults standardUserDefaults] dataForKey:@"events"]) {
+        NSData *data = [[NSUserDefaults standardUserDefaults] dataForKey:@"events"];
+        _meets = [[NSArray alloc] init];
+        _meets = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        meetings = _meets;
+        [_table reloadData];
+    } else {
+        [AFMInfoBanner showAndHideWithText:@"Нет встреч" style:AFMInfoBannerStyleError];
+    }
+    
 }
 
 #pragma mark - Map
