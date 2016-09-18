@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface JMHeaderListCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *creatorImageView;
+@property (weak, nonatomic) IBOutlet UILabel *creatorName;
+@property (weak, nonatomic) IBOutlet UILabel *meetingName;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
 @end

@@ -12,6 +12,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    _creatorImageView.layer.cornerRadius = _creatorImageView.frame.size.width/2 - 6;
+    _creatorImageView.layer.masksToBounds = YES;
     // Initialization code
 }
 

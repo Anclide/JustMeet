@@ -10,4 +10,11 @@
 
 @interface JMFriend : NSObject
 
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *surname;
+@property (strong, nonatomic) NSNumber *userId;
+@property (strong, nonatomic) NSString *city;
+@property (strong, nonatomic) NSString *photo100url;
+@property (strong, nonatomic) NSNumber *isOnline;
+
 @end

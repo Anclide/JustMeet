@@ -7,6 +7,7 @@
 //
 
 #import "ZRFlatButton.h"
+#import <DGActivityIndicatorView.h>
 
 @interface ZRFlatButton()
 @property (nonatomic, assign) FlatButtonType flatBtype;
@@ -49,6 +50,9 @@
         overlayColor = [UIColor whiteColor];
         [self setTitleColor:overlayColor forState:UIControlStateNormal];
         self.layer.borderWidth = 0;
+    } else if (_flatBtype == FlatButtonBackgroundWhite ) {
+        backgroundColor = [UIColor whiteColor];
+        
     } else {
         backgroundColor = [UIColor clearColor];
         overlayColor = lightBlue;

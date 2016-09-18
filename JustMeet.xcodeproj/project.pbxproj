@@ -13,6 +13,28 @@
 		7DAE7E8E1D88E1C700B5E2A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAE7E8C1D88E1C700B5E2A4 /* Main.storyboard */; };
 		7DAE7E901D88E1C700B5E2A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DAE7E8F1D88E1C700B5E2A4 /* Assets.xcassets */; };
 		7DAE7E931D88E1C700B5E2A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAE7E911D88E1C700B5E2A4 /* LaunchScreen.storyboard */; };
+		7DEF80991D89494B00EACFDD /* JMOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80981D89494B00EACFDD /* JMOAuthViewController.m */; };
+		7DEF80A11D894E1200EACFDD /* ZRFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80A01D894E1200EACFDD /* ZRFlatButton.m */; };
+		7DEF80A41D89669E00EACFDD /* JMProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80A31D89669E00EACFDD /* JMProfileViewController.m */; };
+		7DEF80A71D8966AC00EACFDD /* JMListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80A61D8966AC00EACFDD /* JMListViewController.m */; };
+		7DEF80AA1D8966C500EACFDD /* JMEventCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80A91D8966C500EACFDD /* JMEventCreateViewController.m */; };
+		7DEF80AD1D896C0F00EACFDD /* JMNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80AC1D896C0F00EACFDD /* JMNetManager.m */; };
+		7DEF80B11D89783000EACFDD /* JMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80B01D89783000EACFDD /* JMUser.m */; };
+		7DEF80B51D8979EF00EACFDD /* JMUserMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80B41D8979EF00EACFDD /* JMUserMapper.m */; };
+		7DEF80B81D898B8600EACFDD /* JMFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80B71D898B8600EACFDD /* JMFriend.m */; };
+		7DEF80BC1D898D6D00EACFDD /* JMFriendMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80BB1D898D6D00EACFDD /* JMFriendMapper.m */; };
+		7DEF80BF1D8AD3C900EACFDD /* JMFriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80BE1D8AD3C900EACFDD /* JMFriendTableViewCell.m */; };
+		7DEF80C21D8ADE0000EACFDD /* JMFriendPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80C11D8ADE0000EACFDD /* JMFriendPickerViewController.m */; };
+		7DEF80C51D8AF8F700EACFDD /* JMMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80C41D8AF8F700EACFDD /* JMMeeting.m */; };
+		7DEF80CF1D8B0ED000EACFDD /* JMHeaderListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80CD1D8B0ED000EACFDD /* JMHeaderListCell.m */; };
+		7DEF80D01D8B0ED000EACFDD /* JMHeaderListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEF80CE1D8B0ED000EACFDD /* JMHeaderListCell.xib */; };
+		7DEF80D41D8B108200EACFDD /* JMListBodyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80D21D8B108200EACFDD /* JMListBodyCell.m */; };
+		7DEF80D51D8B108200EACFDD /* JMListBodyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEF80D31D8B108200EACFDD /* JMListBodyCell.xib */; };
+		7DEF80D91D8B111900EACFDD /* JMListFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80D71D8B111900EACFDD /* JMListFooterCell.m */; };
+		7DEF80DA1D8B111900EACFDD /* JMListFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEF80D81D8B111900EACFDD /* JMListFooterCell.xib */; };
+		7DEF80DD1D8BE8FB00EACFDD /* JMDetailEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80DC1D8BE8FB00EACFDD /* JMDetailEventViewController.m */; };
+		7DEF80E01D8BFE4A00EACFDD /* JMInvitedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF80DF1D8BFE4A00EACFDD /* JMInvitedTableViewController.m */; };
+		ACE194B954A58810CE263FF8 /* libPods-JustMeet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4314E223D7B06A3115DF587 /* libPods-JustMeet.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +48,49 @@
 		7DAE7E8F1D88E1C700B5E2A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DAE7E921D88E1C700B5E2A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DAE7E941D88E1C700B5E2A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEF80971D89494B00EACFDD /* JMOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMOAuthViewController.h; sourceTree = "<group>"; };
+		7DEF80981D89494B00EACFDD /* JMOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMOAuthViewController.m; sourceTree = "<group>"; };
+		7DEF809F1D894E1200EACFDD /* ZRFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRFlatButton.h; sourceTree = "<group>"; };
+		7DEF80A01D894E1200EACFDD /* ZRFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRFlatButton.m; sourceTree = "<group>"; };
+		7DEF80A21D89669E00EACFDD /* JMProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMProfileViewController.h; sourceTree = "<group>"; };
+		7DEF80A31D89669E00EACFDD /* JMProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMProfileViewController.m; sourceTree = "<group>"; };
+		7DEF80A51D8966AC00EACFDD /* JMListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMListViewController.h; sourceTree = "<group>"; };
+		7DEF80A61D8966AC00EACFDD /* JMListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMListViewController.m; sourceTree = "<group>"; };
+		7DEF80A81D8966C500EACFDD /* JMEventCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMEventCreateViewController.h; sourceTree = "<group>"; };
+		7DEF80A91D8966C500EACFDD /* JMEventCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMEventCreateViewController.m; sourceTree = "<group>"; };
+		7DEF80AB1D896C0F00EACFDD /* JMNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMNetManager.h; sourceTree = "<group>"; };
+		7DEF80AC1D896C0F00EACFDD /* JMNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMNetManager.m; sourceTree = "<group>"; };
+		7DEF80AF1D89783000EACFDD /* JMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUser.h; sourceTree = "<group>"; };
+		7DEF80B01D89783000EACFDD /* JMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUser.m; sourceTree = "<group>"; };
+		7DEF80B31D8979EF00EACFDD /* JMUserMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUserMapper.h; sourceTree = "<group>"; };
+		7DEF80B41D8979EF00EACFDD /* JMUserMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUserMapper.m; sourceTree = "<group>"; };
+		7DEF80B61D898B8600EACFDD /* JMFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFriend.h; sourceTree = "<group>"; };
+		7DEF80B71D898B8600EACFDD /* JMFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFriend.m; sourceTree = "<group>"; };
+		7DEF80BA1D898D6D00EACFDD /* JMFriendMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFriendMapper.h; sourceTree = "<group>"; };
+		7DEF80BB1D898D6D00EACFDD /* JMFriendMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFriendMapper.m; sourceTree = "<group>"; };
+		7DEF80BD1D8AD3C900EACFDD /* JMFriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFriendTableViewCell.h; sourceTree = "<group>"; };
+		7DEF80BE1D8AD3C900EACFDD /* JMFriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFriendTableViewCell.m; sourceTree = "<group>"; };
+		7DEF80C01D8ADE0000EACFDD /* JMFriendPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFriendPickerViewController.h; sourceTree = "<group>"; };
+		7DEF80C11D8ADE0000EACFDD /* JMFriendPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFriendPickerViewController.m; sourceTree = "<group>"; };
+		7DEF80C31D8AF8F700EACFDD /* JMMeeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMMeeting.h; sourceTree = "<group>"; };
+		7DEF80C41D8AF8F700EACFDD /* JMMeeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMMeeting.m; sourceTree = "<group>"; };
+		7DEF80C61D8AFA3400EACFDD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7DEF80CC1D8B0ED000EACFDD /* JMHeaderListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHeaderListCell.h; sourceTree = "<group>"; };
+		7DEF80CD1D8B0ED000EACFDD /* JMHeaderListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHeaderListCell.m; sourceTree = "<group>"; };
+		7DEF80CE1D8B0ED000EACFDD /* JMHeaderListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMHeaderListCell.xib; sourceTree = "<group>"; };
+		7DEF80D11D8B108200EACFDD /* JMListBodyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMListBodyCell.h; sourceTree = "<group>"; };
+		7DEF80D21D8B108200EACFDD /* JMListBodyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMListBodyCell.m; sourceTree = "<group>"; };
+		7DEF80D31D8B108200EACFDD /* JMListBodyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMListBodyCell.xib; sourceTree = "<group>"; };
+		7DEF80D61D8B111900EACFDD /* JMListFooterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMListFooterCell.h; sourceTree = "<group>"; };
+		7DEF80D71D8B111900EACFDD /* JMListFooterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMListFooterCell.m; sourceTree = "<group>"; };
+		7DEF80D81D8B111900EACFDD /* JMListFooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMListFooterCell.xib; sourceTree = "<group>"; };
+		7DEF80DB1D8BE8FB00EACFDD /* JMDetailEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMDetailEventViewController.h; sourceTree = "<group>"; };
+		7DEF80DC1D8BE8FB00EACFDD /* JMDetailEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMDetailEventViewController.m; sourceTree = "<group>"; };
+		7DEF80DE1D8BFE4A00EACFDD /* JMInvitedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMInvitedTableViewController.h; sourceTree = "<group>"; };
+		7DEF80DF1D8BFE4A00EACFDD /* JMInvitedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMInvitedTableViewController.m; sourceTree = "<group>"; };
+		9231C54EDF9F1F6E5D57F2BD /* Pods-JustMeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustMeet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustMeet/Pods-JustMeet.debug.xcconfig"; sourceTree = "<group>"; };
+		DF961B965446507C21CE1962 /* Pods-JustMeet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustMeet.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustMeet/Pods-JustMeet.release.xcconfig"; sourceTree = "<group>"; };
+		F4314E223D7B06A3115DF587 /* libPods-JustMeet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JustMeet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +98,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE194B954A58810CE263FF8 /* libPods-JustMeet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12BA9738EC4D125250DCA554 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4314E223D7B06A3115DF587 /* libPods-JustMeet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		728B6A34065157D388AA7CA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9231C54EDF9F1F6E5D57F2BD /* Pods-JustMeet.debug.xcconfig */,
+				DF961B965446507C21CE1962 /* Pods-JustMeet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DAE7E771D88E1C700B5E2A4 = {
 			isa = PBXGroup;
 			children = (
 				7DAE7E821D88E1C700B5E2A4 /* JustMeet */,
 				7DAE7E811D88E1C700B5E2A4 /* Products */,
+				728B6A34065157D388AA7CA6 /* Pods */,
+				12BA9738EC4D125250DCA554 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +143,10 @@
 		7DAE7E821D88E1C700B5E2A4 /* JustMeet */ = {
 			isa = PBXGroup;
 			children = (
+				7DEF809D1D894DD300EACFDD /* UI */,
+				7DEF809A1D89496700EACFDD /* Model */,
 				7DAE7E861D88E1C700B5E2A4 /* AppDelegate.h */,
 				7DAE7E871D88E1C700B5E2A4 /* AppDelegate.m */,
-				7DAE7E891D88E1C700B5E2A4 /* ViewController.h */,
-				7DAE7E8A1D88E1C700B5E2A4 /* ViewController.m */,
-				7DAE7E8C1D88E1C700B5E2A4 /* Main.storyboard */,
-				7DAE7E8F1D88E1C700B5E2A4 /* Assets.xcassets */,
-				7DAE7E911D88E1C700B5E2A4 /* LaunchScreen.storyboard */,
-				7DAE7E941D88E1C700B5E2A4 /* Info.plist */,
 				7DAE7E831D88E1C700B5E2A4 /* Supporting Files */,
 			);
 			path = JustMeet;
@@ -74,9 +155,117 @@
 		7DAE7E831D88E1C700B5E2A4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7DAE7E8F1D88E1C700B5E2A4 /* Assets.xcassets */,
+				7DAE7E941D88E1C700B5E2A4 /* Info.plist */,
 				7DAE7E841D88E1C700B5E2A4 /* main.m */,
+				7DEF80C61D8AFA3400EACFDD /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DEF809A1D89496700EACFDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7DEF80B91D898D4B00EACFDD /* Entities */,
+				7DEF80B21D8979DA00EACFDD /* Mappers */,
+				7DEF80AE1D8977FE00EACFDD /* Manager */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7DEF809B1D89496D00EACFDD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7DAE7E891D88E1C700B5E2A4 /* ViewController.h */,
+				7DAE7E8A1D88E1C700B5E2A4 /* ViewController.m */,
+				7DEF80971D89494B00EACFDD /* JMOAuthViewController.h */,
+				7DEF80981D89494B00EACFDD /* JMOAuthViewController.m */,
+				7DEF80A21D89669E00EACFDD /* JMProfileViewController.h */,
+				7DEF80A31D89669E00EACFDD /* JMProfileViewController.m */,
+				7DEF80A51D8966AC00EACFDD /* JMListViewController.h */,
+				7DEF80A61D8966AC00EACFDD /* JMListViewController.m */,
+				7DEF80A81D8966C500EACFDD /* JMEventCreateViewController.h */,
+				7DEF80A91D8966C500EACFDD /* JMEventCreateViewController.m */,
+				7DEF80BD1D8AD3C900EACFDD /* JMFriendTableViewCell.h */,
+				7DEF80BE1D8AD3C900EACFDD /* JMFriendTableViewCell.m */,
+				7DEF80C01D8ADE0000EACFDD /* JMFriendPickerViewController.h */,
+				7DEF80C11D8ADE0000EACFDD /* JMFriendPickerViewController.m */,
+				7DEF80CC1D8B0ED000EACFDD /* JMHeaderListCell.h */,
+				7DEF80CD1D8B0ED000EACFDD /* JMHeaderListCell.m */,
+				7DEF80CE1D8B0ED000EACFDD /* JMHeaderListCell.xib */,
+				7DEF80D11D8B108200EACFDD /* JMListBodyCell.h */,
+				7DEF80D21D8B108200EACFDD /* JMListBodyCell.m */,
+				7DEF80D31D8B108200EACFDD /* JMListBodyCell.xib */,
+				7DEF80D61D8B111900EACFDD /* JMListFooterCell.h */,
+				7DEF80D71D8B111900EACFDD /* JMListFooterCell.m */,
+				7DEF80D81D8B111900EACFDD /* JMListFooterCell.xib */,
+				7DEF80DB1D8BE8FB00EACFDD /* JMDetailEventViewController.h */,
+				7DEF80DC1D8BE8FB00EACFDD /* JMDetailEventViewController.m */,
+				7DEF80DE1D8BFE4A00EACFDD /* JMInvitedTableViewController.h */,
+				7DEF80DF1D8BFE4A00EACFDD /* JMInvitedTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7DEF809C1D89497D00EACFDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7DAE7E8C1D88E1C700B5E2A4 /* Main.storyboard */,
+				7DAE7E911D88E1C700B5E2A4 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7DEF809D1D894DD300EACFDD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7DEF809E1D894DEB00EACFDD /* Base */,
+				7DEF809C1D89497D00EACFDD /* View */,
+				7DEF809B1D89496D00EACFDD /* Controllers */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		7DEF809E1D894DEB00EACFDD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7DEF809F1D894E1200EACFDD /* ZRFlatButton.h */,
+				7DEF80A01D894E1200EACFDD /* ZRFlatButton.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		7DEF80AE1D8977FE00EACFDD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7DEF80AB1D896C0F00EACFDD /* JMNetManager.h */,
+				7DEF80AC1D896C0F00EACFDD /* JMNetManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		7DEF80B21D8979DA00EACFDD /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				7DEF80B31D8979EF00EACFDD /* JMUserMapper.h */,
+				7DEF80B41D8979EF00EACFDD /* JMUserMapper.m */,
+				7DEF80BA1D898D6D00EACFDD /* JMFriendMapper.h */,
+				7DEF80BB1D898D6D00EACFDD /* JMFriendMapper.m */,
+			);
+			name = Mappers;
+			sourceTree = "<group>";
+		};
+		7DEF80B91D898D4B00EACFDD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7DEF80AF1D89783000EACFDD /* JMUser.h */,
+				7DEF80B01D89783000EACFDD /* JMUser.m */,
+				7DEF80B61D898B8600EACFDD /* JMFriend.h */,
+				7DEF80B71D898B8600EACFDD /* JMFriend.m */,
+				7DEF80C31D8AF8F700EACFDD /* JMMeeting.h */,
+				7DEF80C41D8AF8F700EACFDD /* JMMeeting.m */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DAE7E971D88E1C700B5E2A4 /* Build configuration list for PBXNativeTarget "JustMeet" */;
 			buildPhases = (
+				1B0CD9436EFD33B2493AF9B2 /* [CP] Check Pods Manifest.lock */,
 				7DAE7E7C1D88E1C700B5E2A4 /* Sources */,
 				7DAE7E7D1D88E1C700B5E2A4 /* Frameworks */,
 				7DAE7E7E1D88E1C700B5E2A4 /* Resources */,
+				B4356719C39C65A4F4A42B80 /* [CP] Embed Pods Frameworks */,
+				AD25CFE9499254A1652888ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,21 +329,90 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DAE7E931D88E1C700B5E2A4 /* LaunchScreen.storyboard in Resources */,
+				7DEF80DA1D8B111900EACFDD /* JMListFooterCell.xib in Resources */,
+				7DEF80D01D8B0ED000EACFDD /* JMHeaderListCell.xib in Resources */,
 				7DAE7E901D88E1C700B5E2A4 /* Assets.xcassets in Resources */,
 				7DAE7E8E1D88E1C700B5E2A4 /* Main.storyboard in Resources */,
+				7DEF80D51D8B108200EACFDD /* JMListBodyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B0CD9436EFD33B2493AF9B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD25CFE9499254A1652888ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustMeet/Pods-JustMeet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4356719C39C65A4F4A42B80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustMeet/Pods-JustMeet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7DAE7E7C1D88E1C700B5E2A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DEF80BC1D898D6D00EACFDD /* JMFriendMapper.m in Sources */,
+				7DEF80E01D8BFE4A00EACFDD /* JMInvitedTableViewController.m in Sources */,
+				7DEF80B51D8979EF00EACFDD /* JMUserMapper.m in Sources */,
+				7DEF80BF1D8AD3C900EACFDD /* JMFriendTableViewCell.m in Sources */,
 				7DAE7E8B1D88E1C700B5E2A4 /* ViewController.m in Sources */,
+				7DEF80D91D8B111900EACFDD /* JMListFooterCell.m in Sources */,
+				7DEF80CF1D8B0ED000EACFDD /* JMHeaderListCell.m in Sources */,
+				7DEF80A11D894E1200EACFDD /* ZRFlatButton.m in Sources */,
+				7DEF80AD1D896C0F00EACFDD /* JMNetManager.m in Sources */,
+				7DEF80C51D8AF8F700EACFDD /* JMMeeting.m in Sources */,
+				7DEF80D41D8B108200EACFDD /* JMListBodyCell.m in Sources */,
+				7DEF80991D89494B00EACFDD /* JMOAuthViewController.m in Sources */,
+				7DEF80A41D89669E00EACFDD /* JMProfileViewController.m in Sources */,
+				7DEF80AA1D8966C500EACFDD /* JMEventCreateViewController.m in Sources */,
 				7DAE7E881D88E1C700B5E2A4 /* AppDelegate.m in Sources */,
+				7DEF80C21D8ADE0000EACFDD /* JMFriendPickerViewController.m in Sources */,
+				7DEF80B81D898B8600EACFDD /* JMFriend.m in Sources */,
+				7DEF80A71D8966AC00EACFDD /* JMListViewController.m in Sources */,
 				7DAE7E851D88E1C700B5E2A4 /* main.m in Sources */,
+				7DEF80B11D89783000EACFDD /* JMUser.m in Sources */,
+				7DEF80DD1D8BE8FB00EACFDD /* JMDetailEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +522,12 @@
 		};
 		7DAE7E981D88E1C700B5E2A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9231C54EDF9F1F6E5D57F2BD /* Pods-JustMeet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/victorbogatyrev/Desktop/Work/JustMeet/JustMeet/PrefixHeader.pch;
 				INFOPLIST_FILE = JustMeet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bogatyrev.JustMeet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,9 +536,12 @@
 		};
 		7DAE7E991D88E1C700B5E2A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF961B965446507C21CE1962 /* Pods-JustMeet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/victorbogatyrev/Desktop/Work/JustMeet/JustMeet/PrefixHeader.pch;
 				INFOPLIST_FILE = JustMeet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bogatyrev.JustMeet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +567,7 @@
 				7DAE7E991D88E1C700B5E2A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

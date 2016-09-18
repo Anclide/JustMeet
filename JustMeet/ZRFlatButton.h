@@ -13,6 +13,7 @@ typedef NS_ENUM(NSUInteger, FlatButtonType) {
     FlatButtonFilled = 0,
     FlatButtonTransparent = 1,
     FlatButtonTransparentNoBorder = 2,
+    FlatButtonBackgroundWhite = 3
 };
 
 IB_DESIGNABLE

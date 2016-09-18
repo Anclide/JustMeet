@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+@class JMUser;
 
 @interface JMUserMapper : NSObject
+
+- (JMUser *)userWithDictionary:(NSDictionary *)dictionary;
 
 @end

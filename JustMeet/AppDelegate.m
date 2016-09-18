@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "JMNetManager.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface AppDelegate ()
 
@@ -16,8 +19,48 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [GMSServices provideAPIKey:@"AIzaSyCxCMlicpv2J8y8ONaltsvLi80KKqIW0H0"];
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"]) {
+        [[JMNetManager sharedManager] fetchUserInfoWithId:[[NSUserDefaults standardUserDefaults] objectForKey:@"user_id"] andCompletion:^(NSDictionary *dict, NSError *err) {
+            if (err) {
+                return;
+            }
+        }];
+        UIStoryboard *enterStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+        self.window.rootViewController = [enterStoryboard instantiateViewControllerWithIdentifier:@"TabBar"];
+        [self.window makeKeyAndVisible];
+    }
+    [self setupNavigationBarApperance];
+    [SVProgressHUD setForegroundColor:[UIColor blackColor]];
+    [SVProgressHUD setBackgroundColor:[UIColor grayColor]];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     // Override point for customization after application launch.
     return YES;
+}
+
+-(void)setupNavigationBarApperance{
+    
+    UIColor *white =[UIColor whiteColor];
+    [[UINavigationBar appearance] setTintColor:white];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.27 green:0.815 blue:0.984 alpha:1]];
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:0.27 green:0.815 blue:0.984 alpha:1]];
+    [[UINavigationBar appearance] setShadowImage:[UIImage new]];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : white
+                                                            }];
+    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:nil
+                                                                  action:nil];
+    //[UINavigationBar appearance].backItem.backBarButtonItem = backButton;
+    [[[UINavigationBar appearance] topItem] setBackBarButtonItem:backButton];
+    
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                         forBarMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setTintColor:white];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

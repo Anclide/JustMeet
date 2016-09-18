@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface JMListBodyCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *meetingImageView;
+@property (weak, nonatomic) IBOutlet UILabel *meetingAddress;
 
 @end

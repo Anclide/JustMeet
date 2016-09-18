@@ -10,4 +10,9 @@
 
 @interface JMFriendTableViewCell : UITableViewCell
 
+@property (nonatomic, weak) IBOutlet UIImageView *friendImage;
+@property (nonatomic, weak) IBOutlet UILabel *friendName;
+@property (nonatomic, weak) IBOutlet UILabel *friendCity;
+@property (nonatomic, weak) IBOutlet UIView *onlineView;
+@property (nonatomic, strong) NSNumber *userId;
 @end

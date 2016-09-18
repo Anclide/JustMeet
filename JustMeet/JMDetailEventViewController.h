@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@class JMMeeting;
 
 @interface JMDetailEventViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *detailImageview;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
+@property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+
+@property (strong, nonatomic) JMMeeting *event;
 
 @end

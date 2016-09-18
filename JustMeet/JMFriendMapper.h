@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+@class JMFriend;
 
 @interface JMFriendMapper : NSObject
+
+- (JMFriend *)friendWithDictionary:(NSDictionary *)dictionary;
 
 @end

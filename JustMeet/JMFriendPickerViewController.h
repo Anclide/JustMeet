@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol JMFriendPickerDelegate <NSObject>
+@required
+
+- (void)setFriends:(NSArray *)array;
+
+@end
+
 @interface JMFriendPickerViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITableView *table;
+
+@property (nonatomic, assign) id <JMFriendPickerDelegate> delegate;
+@property (strong, nonatomic) NSMutableArray *selectedFriends;
+
 
 @end

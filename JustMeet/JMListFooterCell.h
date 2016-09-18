@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface JMListFooterCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *likes;
+@property (weak, nonatomic) IBOutlet UILabel *comments;
 
 @end

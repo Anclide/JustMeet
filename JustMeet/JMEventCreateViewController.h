@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
+@class TPKeyboardAvoidingScrollView;
 
 @interface JMEventCreateViewController : ViewController
+@property (weak, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *containerView;
 
 @end
