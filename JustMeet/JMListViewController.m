@@ -57,16 +57,16 @@ static NSUInteger row;
 }
 
 - (void)reloadData {
-    if ([[NSUserDefaults standardUserDefaults] dataForKey:@"events"]) {
-        NSData *data = [[NSUserDefaults standardUserDefaults] dataForKey:@"events"];
-        _meets = [[NSArray alloc] init];
-        _meets = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-        meetings = _meets;
-        [_table reloadData];
-    } else {
-        [AFMInfoBanner showAndHideWithText:@"Нет встреч" style:AFMInfoBannerStyleError];
-    }
-    
+    NSData *data = [[NSUserDefaults standardUserDefaults] dataForKey:@"events"];
+    _meets = [[NSArray alloc] init];
+    _meets = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    meetings = _meets;
+    [_table reloadData];
+    [self reloadMarkers];
+//    if (!meetings) {
+//        [AFMInfoBanner showAndHideWithText:@"Нет встреч" style:AFMInfoBannerStyleError];
+//    }
+   
 }
 
 #pragma mark - Map
@@ -82,6 +82,12 @@ static NSUInteger row;
     _mapView.settings.myLocationButton = YES;
     _mapView.camera = [GMSCameraPosition cameraWithTarget:_locationManager.location.coordinate zoom:17];
     
+    [self reloadMarkers];
+    
+}
+
+- (void)reloadMarkers {
+    _mapView.camera = [GMSCameraPosition cameraWithTarget:_locationManager.location.coordinate zoom:17];
     for (JMMeeting *meet in meetings) {
         if (meet.longitude && meet.latitude) {
             GMSMarker *marker = [[GMSMarker alloc] init];
