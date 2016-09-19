@@ -115,7 +115,7 @@
         event.meetId = [NSString stringWithFormat:@"%.0f", [[NSDate date] timeIntervalSince1970]];
         event.longitude = [NSNumber numberWithFloat:_location.longitude];
         event.latitude = [NSNumber numberWithFloat:_location.latitude];
-        _location = CLLocationCoordinate2DMake(0.0, 0.0);
+        //_location = CLLocationCoordinate2DMake(event.latitude, event.longitude);
         if (!event.longitude && !event.latitude) {
             CLGeocoder *geocoder = [[CLGeocoder alloc] init];
             [geocoder geocodeAddressString:_addressField.text completionHandler:^(NSArray* placemarks, NSError* error){
@@ -132,7 +132,9 @@
             arr = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] dataForKey:@"events"]];
         }
         //arr = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] dataForKey:@"events"]];
-        [arr addObject:event];
+        //[arr addObject:event];
+        [arr insertObject:event atIndex:0];
+        //[[NSUserDefaults standardUserDefaults] setObject:_location forKey:@"lastLocation"];
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:arr];
         [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"events"];
         [[NSUserDefaults standardUserDefaults] synchronize];
